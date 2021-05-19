@@ -1,16 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import DateFnsUtils from "@date-io/date-fns";
+import { MuiPickersUtilsProvider } from "@material-ui/pickers";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <MuiPickersUtilsProvider utils={DateFnsUtils}>
     <App />
-  </React.StrictMode>,
+  </MuiPickersUtilsProvider>  ,
   document.getElementById('root')
 );
-
 
 
 

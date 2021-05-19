@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calender {
+}
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.MuiPickersDay-daySelected {
+  background-color: #d73d36;
+}
+.MuiPickersToolbar-toolbar {
+  background-color: #d73d36;
+}
+

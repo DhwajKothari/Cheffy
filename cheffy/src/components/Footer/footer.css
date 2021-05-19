@@ -1,0 +1,22 @@
+.footer {
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+  margin-top: 1rem;
+}
+.footerbar {
+  height: 2;
+  background-color: "#e5e5e5";
+  margin-bottom: 1rem;
+}
+.footer .icon {
+  padding: 1.2rem;
+  font-size: 50px;
+  color: #000;
+}
+
+.footer p {
+  color: #ccc;
+  margin-bottom: 2rem;
+}

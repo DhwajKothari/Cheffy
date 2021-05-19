@@ -6,8 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.MuiPickersDay-daySelected {
+  background-color: #d73d36;
+}
+.MuiPickersToolbar-toolbar {
+  background-color: #d73d36;
 }
