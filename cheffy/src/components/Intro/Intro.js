@@ -1,10 +1,10 @@
 import React from "react";
 
-const Intro = () => {
+const Intro = (props) => {
   return (
     <div>
       <h2>Welcome Back Chef Josh</h2>
-      <p>Upload your Schedule</p>
+      <p>Check your Schedule</p>
     </div>
   );
 };
