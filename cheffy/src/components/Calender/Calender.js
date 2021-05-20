@@ -4,7 +4,6 @@ import enLocale from "date-fns/locale/en-US";
 import {
   DatePicker,
   TimePicker,
-  DateTimePicker,
   MuiPickersUtilsProvider,
 } from "@material-ui/pickers";
 import "./calender.css";

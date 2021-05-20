@@ -6,31 +6,37 @@ import Intro from "./components/Intro/Intro";
 import Schedule from "./components/Schedule/Schedule";
 
 const App = (props) => {
+  const [AddOn, toggleOn] = React.useState(false)
   const [schedule, setSchedule] = React.useState([]);
   const addToSchedule = (work, date, endTime) => {
-    setSchedule((schedule) => {
-      schedule.push({
-        title: work,
-        startDate: date,
-        startTime: date,
-        endTime: endTime,
-
-      });
+    setSchedule((prevSchedule) => {
+      return [
+        ...prevSchedule,
+        {
+          title: work,
+          startDate: date,
+          startTime: date,
+          endTime: endTime,
+        },
+      ];
     });
-    console.log(schedule);
   };
   function addTask() {
-    return
-    <Calender addToSchedule={addToSchedule} />;
+    toggleOn(prev => !prev);
   }
+  React.useEffect(() => {
+    setSchedule([]);
+  }, []);
   return (
     <div className="App">
       <Header />
       <Intro />
-      <Schedule schedule={schedule} addTask={addTask}/>
+      <Schedule schedule={schedule} addTask={addTask} />
+      {AddOn ? <Calender addToSchedule={addToSchedule} /> : null}
       <Footer />
     </div>
   );
 };
+
 
 export default App;

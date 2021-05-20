@@ -4,14 +4,15 @@ import AddCircleIcon from "@material-ui/icons/AddCircle";
 import "./schedule.css";
 
 const Schedule = (props) => {
-  return (
+    return (
     <div className="scheduleContainer">
       {props.schedule.map((task, index) => {
-        return <ScheduleTask task={task} id={index} />;
+        return <ScheduleTask task={task} id={index} key={index} />;
       })}
-      <div className="btn" onClick={props.addTask}>
+      {/* {console.log(props.schedule)} */}
+      <button className="btn" onClick={props.addTask}>
         <AddCircleIcon />
-      </div>
+      </button>
     </div>
   );
 };
