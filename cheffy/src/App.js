@@ -4,6 +4,7 @@ import Footer from "./components/Footer/Footer";
 import Calender from "./components/Calender/Calender";
 import Intro from "./components/Intro/Intro";
 import Schedule from "./components/Schedule/Schedule";
+import compareAsc from "date-fns/compareAsc";
 
 const App = (props) => {
   const [AddOn, toggleOn] = React.useState(false)
@@ -18,9 +19,12 @@ const App = (props) => {
           startTime: date,
           endTime: endTime,
         },
-      ];
+      ].sort(scheduleSorting);
     });
   };
+  function scheduleSorting(a, b){
+    return compareAsc(a.startDate, b.startDate);
+  }
   function addTask() {
     toggleOn(prev => !prev);
   }

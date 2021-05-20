@@ -3,25 +3,52 @@
     justify-content: center;
     align-items: center;
 }
-.calender {
+.titleInput {
+  margin-left: 15px;
+  height: 30px;
+  width: 25rem;
+  border: 1px solid #d73d36;
+  border-radius: 0.5rem;
+  padding-left: 10px;
+}
+.timeSlotText{
+  margin: 0;
+}
+.timeSlotText h3{
+  /* margin-top:0; */
+  margin-bottom:0;
 }
 .time {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    padding-top: 0;
+    margin-top: 0;
+}
+.startTime{
+  padding: 15px;
+}
+.endTime{
+  padding: 15px;
+}
+.btnContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
 }
 .AddTaskbtn{
     background-color: #d73d36;
     color: #fff;
-    border-radius: 50%;
+    border: 1px solid #d73d36;
+    border-radius: 0.5rem;
     height: 2rem;
+    width: 200px;
+    font-size: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
 }
 
-.MuiPickersDay-daySelected {
-  background-color: #d73d36;
-}
-.MuiPickersToolbar-toolbar {
-  background-color: #d73d36;
-}
 

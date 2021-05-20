@@ -1,3 +1,24 @@
+.scheduleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #d73d36;
+    border-radius: 10px;
+    width: 20rem;
+}
+/* .btnContainer{
+    align-self: center;
+} */
 .btn{
-
+    border: 1px solid #d73d36;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+}
+.addbtn{
+    color: #d73d36;
 }

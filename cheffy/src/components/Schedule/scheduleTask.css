@@ -2,5 +2,8 @@
     flex-direction: row;
 }
 .taskDate h4{
-    font-family: ;
+    font-family: "McLaren", cursive;
+}
+.taskTitle {
+    font-size: 20px;
 }
