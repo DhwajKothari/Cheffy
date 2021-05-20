@@ -12,6 +12,11 @@ const Header = (props) => {
         />
         <h1 className="headerTitle">Cheffy</h1>
       </a>
+      <div className="navbar">
+        <a href="https://cheffy.us/contact" alt="contact-us-page">
+          <p className="contactUs">Contact Us</p>
+        </a>
+      </div>
     </div>
   );
 };
