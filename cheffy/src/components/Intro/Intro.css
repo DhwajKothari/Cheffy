@@ -1,6 +1,13 @@
-.introContainer{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 0;
+.introContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 0;
+  margin-bottom: 1.1rem;
+}
+.welcomeMsg {
+  font-size: 1.6rem;
+}
+welcomeMsgText {
+  margin-bottom: 0;
 }

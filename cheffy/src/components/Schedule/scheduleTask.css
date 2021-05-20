@@ -1,9 +1,26 @@
+.task{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    background-image: url("https://www.transparenttextures.com/patterns/food.png");
+    border-radius: 10px;
+    padding: 8px;
+    margin: 8px;
+    border: solid 0.5px #d73d36;
+    box-shadow: 0px 0.5px 2px;
+}
 .taskTime{
-    flex-direction: row;
+    margin-top: 0;
+    font-size: 14px;
+    /* flex-direction: row; */
 }
 .taskDate h4{
+    margin-top: 0;
+    margin-bottom: 2px;
     font-family: "McLaren", cursive;
 }
 .taskTitle {
     font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 2px;
 }

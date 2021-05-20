@@ -1,6 +1,7 @@
 import React from "react";
 import { format } from "date-fns";
 import "./scheduleTask.css";
+import _ from "lodash";
 
 const ScheduleTask = (props) => {
   let sameDay = props.sameDate;
@@ -16,7 +17,7 @@ const ScheduleTask = (props) => {
           <h4>{date}</h4>
         </div>
       )}
-      <p className="taskTitle">{props.task.title}</p>
+      <p className="taskTitle">{_.capitalize(props.task.title)}</p>
       <div className="taskTime">
         <p>{"Start Time: " + startTime}</p>
         <p>{"End Time: " + endTime}</p>

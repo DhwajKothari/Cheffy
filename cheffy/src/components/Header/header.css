@@ -3,16 +3,30 @@
   flex-direction: row;
   align-items: center;
   background-color: #d73d36;
-  margin: auto 0px;
-  padding: 16px 80px;
+  padding: 0 0 16px 80px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
-.header .logo {
+a {
+  outline: none;
+  text-decoration: none;
+}
+a:link, a:visited, a:focus, a:active {
+  outline: none;
+  text-decoration: none;
+}
+.linkToCheffy{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
   height: 32px;
   width: 32px;
 }
-.header h1 {
+.headerTitle {
   color: #fff;
+  display: inline;
   font-family: "McLaren", cursive;
   font-weight: 200;
   margin-left: 20px;
